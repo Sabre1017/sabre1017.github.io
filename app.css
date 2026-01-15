@@ -168,10 +168,6 @@ video {
     padding-bottom: 30px;
     padding-top: 0px;
   }
-
-  video {
-    width: 100%;
-  }
 }
 
 
@@ -183,7 +179,3 @@ video {
       font-size: 3rem;
     }
 }
-
-/*top padding for nav bar when squeezed, 90+10vh but still scrollable?*/
-/*media query 100% width has extra white space to the right why*/
-/*intro section no change when toggle height*/
