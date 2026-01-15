@@ -164,12 +164,11 @@ video {
     order: 2;
     width: 100%;
     align-items: center;
+    text-align: center;
     justify-content: center;
     padding-bottom: 30px;
     padding-top: 0px;
   }
-
-
 
   video {
     max-width: 100%;
@@ -180,6 +179,9 @@ video {
 @media (max-width:800px) {
     .nav-links {
       display: none;
+    }
+    h1 {
+      font-size: 3rem;
     }
 }
 
