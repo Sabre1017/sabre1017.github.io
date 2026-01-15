@@ -126,10 +126,10 @@ h2 {
 }
 
 .video {
-    width: 55%;
     padding: 20px;
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 /*.box {
@@ -143,8 +143,7 @@ h2 {
 }*/
 
 video {
-    flex: 1;
-    max-width: 50vw;
+    width: 100%;
     box-shadow: 0 0 20px rgba(239, 209, 76, 0.8);
 }
 
@@ -171,7 +170,7 @@ video {
   }
 
   video {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
