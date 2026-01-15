@@ -1,21 +1,23 @@
 body {
   margin: 0;
+  height: 100%;
+  background-image: url(https://wallpapers.com/images/featured/cool-black-background-zuepoib34iujg4he.jpg);
 }
 
-/* Navigation Bar */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10%;
-  padding: 12px 40px;
-  background: linear-gradient(90deg, black, #232222);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 8px 10px;
+    background: linear-gradient(90deg, black, #232222);
 }
 
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  margin-left: 12px;
+  gap: 20px;
 }
 
 .nav-left img {
@@ -27,15 +29,15 @@ nav {
 .nav-left p {
   font-size: 1.2rem;
   font-weight: 600;
-  translate: 10px -2px;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 28px;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-right: 25px;
 }
 
 .nav-links a {
@@ -64,83 +66,53 @@ nav {
   width: 100%;
 }
 
-/* Header/Intro Design */
-header {
-    height: 609px;
-    background-image: url(https://images.unsplash.com/photo-1486881809698-a59614a9ac7e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+section {
+    height: 90vh;
+    display: flex;
+    width: 100%;
     background-size: cover;
     color: white;
-    margin: 0 auto;
 }
 
-header h1{
+.intro {
+    width: 45%;
+    height: auto;
+    margin: 100px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
     font-family: "BBH Bartle", sans-serif;
     font-weight: normal;
-    font-size: 60px;
-    margin-left: 100px;
-    margin-bottom: 40px;
-    margin-top: 0px;
+    font-size: 3.5rem;
     text-shadow: rgb(243, 166, 24) 2px -2px 20px;
-    display: block;
 }
 
-header h2 {
+h2 {
     font-family: "BBH Bartle", sans-serif;
     font-weight: 100;
-    width: 500px;
-    margin-left: 100px;
-    display: block;
 }
 
-header p {
+.intro p {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    width: 500px;
-    margin-left: 100px;
-    padding-top: 30px;
-    display: block;
 }
 
-header p b {
+.intro p b {
     text-shadow: #e063de 2px 0 10px;
 }
 
-header h1,h2, p {
-  translate: 0px 100px;
-}
-
-.box {
-  border: 5px solid rgba(255, 255, 255, 0.7);
-  padding: 18px;
-  letter-spacing: 0.04em;
-  height: 390px;
-  width: 710px;
-  position: absolute;
-  top: 130px;
-  left: 740px;
-}
-
-
-header video {  
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    position: absolute;
-    top: 150px;
-    left: 760px;
-}
-
 #exp {
-  padding: 1rem 2rem;
-  background: linear-gradient(180deg,#ffffff,#f6f7f8);
-  border: solid white;
-  border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  color: black;
-  display: inline-block;
-  translate: 100px 130px;
-  transition: all 0.5s;
+    padding: 1rem 2rem;
+    width: 100px;
+    background: linear-gradient(180deg,#ffffff,#f6f7f8);
+    border: solid white;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
 }
 
 #exp:hover {
@@ -149,33 +121,65 @@ header video {
   transform: translateX(4px);
 }
 
-/* Section 2 */
-/*section {
-  height: 500px;
-  background-image: url(https://images.unsplash.com/photo-1707209856575-a80b9dff5524?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  margin: 0 auto;
+.video {
+    width: 55%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
-section h2 {
-  padding-left: 25px;
-  padding-top: 20px;
-  font-size: 52px;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 28px;
-}
-
-section h3 {
-  padding-top: 15px;
-  max-width: 500px;
-  font-size: 20px;
-  font-weight: 400;
-  color: #475569;
-  padding-left: 25px;
-}
-
-section img {
-  translate: 800px -300px;
-  border-color: #e063de;
+/*.box {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 5%;
 }*/
+
+video {
+    height: 70%;
+    box-shadow: 0 0 20px rgba(239, 209, 76, 0.8);
+}
+
+@media (max-width: 1265px) {
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+
+  .video {
+    order: 1;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .intro {
+    order: 2;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  .intro h1,h2,p {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .video video {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width:800px) {
+    h1 {
+        color: purple;
+    }
+}
+
+/*top padding for nav bar when squeezed, 90+10vh but still scrollable?*/
+/*media query 100% width has extra white space to the right why*/
+/*intro section no change when toggle height*/
