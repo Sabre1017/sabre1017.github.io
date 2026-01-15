@@ -20,13 +20,12 @@ nav {
 .nav-left {
   display: flex;
   align-items: center;
-  margin-left: 12px;
+  padding-left: 12px;
   gap: 20px;
 }
 
 .nav-left img {
   height: 45px;
-  width: auto;
   border-radius: 50%;
 }
 
@@ -41,7 +40,7 @@ nav {
     display: flex;
     list-style: none;
     gap: 40px;
-    margin-right: 25px;
+    padding-right: 25px;
 }
 
 .nav-links a {
@@ -81,15 +80,16 @@ section {
 .intro {
     width: 45%;
     height: auto;
-    margin: 100px 50px;
+    padding: 100px 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
     font-family: "BBH Bartle", sans-serif;
     font-weight: normal;
-    font-size: 3.5rem;
+    font-size: 3.5em;
     text-shadow: rgb(243, 166, 24) 2px -2px 20px;
 }
 
@@ -143,7 +143,8 @@ h2 {
 }*/
 
 video {
-    height: 70%;
+    flex: 1;
+    max-width: 50vw;
     box-shadow: 0 0 20px rgba(239, 209, 76, 0.8);
 }
 
@@ -163,26 +164,26 @@ video {
     order: 2;
     width: 100%;
     align-items: center;
-    margin-bottom: 30px;
-    margin-top: 0px;
+    padding-bottom: 30px;
+    padding-top: 0px;
   }
 
   .intro h1,h2,p {
     width: 80%;
     text-align: center;
   }
-  
-  .video video {
-    width: 80%;
-    height: auto;
+
+  video {
+    max-width: 100%;
   }
 }
 
-@media (max-width:800px) {
+
+/*@media (max-width:800px) {
     h1 {
         color: purple;
     }
-}
+}*/
 
 /*top padding for nav bar when squeezed, 90+10vh but still scrollable?*/
 /*media query 100% width has extra white space to the right why*/
