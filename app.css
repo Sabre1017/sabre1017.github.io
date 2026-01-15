@@ -164,14 +164,12 @@ video {
     order: 2;
     width: 100%;
     align-items: center;
+    justify-content: center;
     padding-bottom: 30px;
     padding-top: 0px;
   }
 
-  .intro h1,h2,p {
-    width: 80%;
-    text-align: center;
-  }
+
 
   video {
     max-width: 100%;
@@ -179,11 +177,11 @@ video {
 }
 
 
-/*@media (max-width:800px) {
-    h1 {
-        color: purple;
+@media (max-width:800px) {
+    .nav-links {
+      display: none;
     }
-}*/
+}
 
 /*top padding for nav bar when squeezed, 90+10vh but still scrollable?*/
 /*media query 100% width has extra white space to the right why*/
